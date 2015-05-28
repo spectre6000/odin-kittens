@@ -1,1 +1,8 @@
-<p>Kittens Index</p>
+<% provide(:title, 'All Kittens') %>
+
+<% @kittens.each do |k| %>
+  <%= k.name %>
+  <%= k.age %>
+  <%= k.cuteness %>
+  <%= k.softness %>
+<% end %>

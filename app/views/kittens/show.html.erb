@@ -1,0 +1,7 @@
+<% provide(:title, 'Show Kittens') %>
+
+<%= @kitten.name %>
+<%= @kitten.age %>
+<%= @kitten.cuteness %>
+<%= @kitten.softness %>
+<%= link_to 'Delete', @kitten, :method => :delete %>
